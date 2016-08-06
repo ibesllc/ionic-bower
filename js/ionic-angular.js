@@ -12639,7 +12639,8 @@ function($timeout, $compile, $ionicSlideBoxDelegate, $ionicHistory, $ionicScroll
         },
         onDragEnd: function() {
           freezeAllScrolls(false);
-        }
+        },
+        isRTL: $ionicHistory.isRTL()
       });
 
       function freezeAllScrolls(shouldFreeze) {
